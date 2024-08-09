@@ -38,6 +38,7 @@ nav ul  {
     display: grid;
     grid-template-columns: repeat(3 ,10vw);
     grid-template-rows: repeat(3 ,10vw);
+    position: relative;
     
 }
 
@@ -90,7 +91,9 @@ padding:  34px;
     font-weight: 600;
 }
 .line{
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary-color);
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    transition: width 1s ease-in-out;
 }
